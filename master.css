@@ -1,3 +1,5 @@
+
+/*selector por clase*/
 .cabecera{
  background-color: lavender;
   }
@@ -16,4 +18,55 @@
 }
 .piePagina{
   background-color: pink;
+}
+
+/*selectorpor id*/
+#tituloprincipal{
+text-align: center;
+
+}
+  /*selector cambinador de decendientes*/
+
+ nav li{
+  display: inline-block;
+}
+/*multiples selectores*/
+h2,h3,h4,h5{
+  color:purple;
+
+}
+/*selector combinador de hijo*/
+ul>li{
+list-style:none;
+}
+/*selector usando clase y etiquetas*/
+.galeria img{
+width: 200px;
+height: auto;
+}
+
+.navPrincipal li{
+  background-color: grey;
+}
+
+
+/*ppseudoclases*/
+.navPrincipal li:hover{
+  background-color:green;
+
+  transition-delay: 0.5s;
+  transition:-timing-function:ease-in-out;
+  transition-property:background-color;
+
+}
+
+/*pseudo elementos*/
+.exciting-text::after{
+  content: "<-exciting!";
+  color: green;
+}
+
+.boring-text::after{
+  content: "<-boring";
+  color: red;
 }
