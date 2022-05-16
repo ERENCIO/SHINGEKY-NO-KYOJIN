@@ -1,13 +1,36 @@
 
-/*selector por clase*/
+/* selector por clase */
 .cabecera{
- background-color: lavender;
- width: 100px
- border-radius:100%;
-  }
+  background-color: lavender;
+  height: 200px;
+}
+.cabecera img{
+  display: inline-block;
+  width: 150px;
+  border-radius: 100%;
+  position: relative;
+  right: 600px;
+  top: 25px;
+}
+.cabecera h3{
+  display: inline-block;
+  position: relative;
+  left:-35px;
+  bottom: 35px;
+}
+/* selector por id */
+#tituloPrincipal{
+  display: inline-block;
+  width: auto;
+  position: relative;
+  left: 250px;
+  bottom: 65px;
+
+}
 
 .navPrincipal{
   background-color: olive;
+
 }
 .principal{
   background-color: pink;
@@ -15,70 +38,78 @@
 .noticias{
   background-color: lavender;
 }
-
 .nota{
+  display: inline-block;
+  width: 48%;
+  position: relative;
+  left: 15px;
   background-color: olive;
+}
+.nota img{
+  display: inline-block;
+  position: relative;
+  left: 250px;
+  width auto;
+  height: 300px;
 }
 .piePagina{
   background-color: pink;
 }
-
-/*selector por id*/
-#tituloprincipal{
+.nota{
   display: inline-block;
-  width: 50%;
-  text-align: center;
-  padding: 10px;
-  border: 3px solid black;
-  border-radius: 10px;
-  border-bottom-style: 5px dotted red;
-  margin: 10px;
-}
-  /*selector cambinador de decendientes*/
 
- nav li{
-  display: inline-block;
 }
-/*multiples selectores*/
+
+/* selector Combinador de descendientes */
+nav li{
+ display: inline-block;
+}
+/* multiples selectores */
 h2,h3,h4,h5{
-  color:purple;
+  color: purple;
+}
 
-}
-/*selector combinador de hijo*/
+/* selector Combinador de hijo */
 ul>li{
-list-style:none;
+  list-style: none;
 }
-/*selector usando clase y etiquetas*/
+/* selector usando clases y etiquetas  */
 .galeria img{
-width: 200px;
-height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .navPrincipal li{
   background-color: grey;
 }
 
-
-/*ppseudoclases*/
+/* pseudoclases */
 .navPrincipal li:hover{
-  background-color:green;
-
+  background-color: green;
 
 }
-
-/*pseudo elementos*/
-.exciting-text::after{
-  content: "<- EXCITING!";
+/* pseudo elementos */
+.exciting-text::after {
+  content: " <- EXCITING!";
   color: green;
 }
 
-.boring-text::after{
-  content: "<- BORING!";
+.boring-text::after {
+  content: " <- BORING";
   color: red;
 }
+
 hr{
   width: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 7px dotted red;
+}
+.nota1{
+  width:
+  left: 20px;
+}
+.nota img{
+  width: auto;
+  height: 300px;
 }
