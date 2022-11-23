@@ -1,0 +1,13 @@
+.imagenes{
+    height: 500px;
+    background-color: darkslategray;
+}
+
+hr{
+    color: darkslategrey;
+}
+
+span{
+    color: goldenrod;
+}
+text-transform: uppercase;
